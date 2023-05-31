@@ -7,11 +7,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        notojp: ['var(--font-noto_jp)'],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        backgroundColor: '#e6f2ff',
+        primary: '#fcf7f3',
+        secondary: '#f94d46'
+      },
+      width: {
+        '100': '28rem',
+      }
     },
   },
   plugins: [],
