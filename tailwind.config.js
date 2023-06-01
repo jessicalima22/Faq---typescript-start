@@ -18,10 +18,18 @@ module.exports = {
       colors: {
         backgroundColor: '#e6f2ff',
         primary: '#fcf7f3',
-        secondary: '#f94d46'
+        secondary: '#ffffff',
+        backgroundColorHover:'#f94d46'
       },
       width: {
         '100': '28rem',
+        'textbox': '31rem'
+      },
+      maxHeight: {
+        '100': '28rem'
+      },
+      minWidth: {
+        '98': '24rem'
       }
     },
   },
