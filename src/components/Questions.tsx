@@ -1,17 +1,21 @@
 import { IconMinus } from "@tabler/icons-react"
 import { IconPlus } from "@tabler/icons-react"
-import { useState } from "react"
+
 
 interface QuestionProps {
     question: string
     answer: string
+    open: boolean
+    id: number
+    toggleVisibility: (id: number) => void
+    
 }
 
 export default function Questions (props: QuestionProps){
-    const [open, setOpen] = useState (false)
+    
 
     function whenOpen (){
-        setOpen(!open)
+        props.toggleVisibility(props.id)
 
     }
 
@@ -25,10 +29,10 @@ export default function Questions (props: QuestionProps){
                 cursor-pointer flex justify-between`} 
                 onClick={whenOpen}>
                 {props.question}
-                {open ? <IconMinus/> : <IconPlus/>}
+                {props.open ? <IconMinus/> : <IconPlus/>}
                 
             </div>
-            {open && (
+            {props.open && (
             <div className="p-4 max-w-sm">
                 {props.answer}
             </div>
