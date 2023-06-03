@@ -1,9 +1,14 @@
 import { useState } from "react";
 import Questions from "./Questions";
+import peopleImage from "../../public/people.png"
+import Image from "next/image";
 
-const [active, setActive] = useState(0)
 
-function toggleVisibility (id:number) {
+export default function Faq () {
+
+    const [active, setActive] = useState(0)
+
+    function toggleVisibility (id:number) {
     if(id === active) {
         setActive(-1)
     } else {
@@ -11,10 +16,9 @@ function toggleVisibility (id:number) {
     }
 }
 
-export default function Faq () {
     return(
-        <main className=" bg-primary pt-5 pb-32">
-            <div className="w-screen  flex ">
+        <main className=" bg-primary pt-5 flex flex-col items-end h-30%">
+            <div className="w-screen flex justify-evenly">
                 <section className="ps-40">
                     <Questions 
                         question='What is Tailwind and how does it work?' 
@@ -69,6 +73,11 @@ export default function Faq () {
                         />
                 </section>
             </div>
+            
+            <section className="justify-end border border-red-600 w-2/5">
+                <Image src={peopleImage} alt="people teaching"
+                className="w-3/5"/>
+            </section>
         </main>
 
     )
