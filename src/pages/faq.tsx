@@ -2,7 +2,7 @@ import Faq from "../components/Faq";
 
 export default function FaqPage () {
     return (
-        <div className="flex flex-col items-center justify-center h-screen bg-backgroundColor ">
+        <div className="grid justify-center bg-backgroundColor ">
             <div className=" text-5xl font-notojp w-100 text-center leading-tight ">
                 <p>Frequently Asked Questions </p>
             </div>

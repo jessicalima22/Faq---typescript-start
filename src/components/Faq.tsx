@@ -17,9 +17,9 @@ export default function Faq () {
 }
 
     return(
-        <main className=" bg-primary pt-5 flex flex-col items-end h-30%">
-            <div className="w-screen flex justify-evenly">
-                <section className="ps-40">
+        <main className=" bg-primary pt-5 grid grid-cols-2 grid-rows-3">
+            <div className="w-screen">
+                <section className="ps-40 row-span-3">
                     <Questions 
                         question='What is Tailwind and how does it work?' 
                         answer='Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...'
@@ -49,7 +49,7 @@ export default function Faq () {
                         open = {active===3}
                         />
                 </section>
-                <section className="ps-20">
+                <section className="ps-20 row-span-1">
                     <Questions 
                         question='How do I become a data Scientist?' 
                         answer='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex.'
@@ -74,7 +74,7 @@ export default function Faq () {
                 </section>
             </div>
             
-            <section className="justify-end border border-red-600 w-2/5">
+            <section className="justify-end border border-red-600 w-2/5 row-span-2">
                 <Image src={peopleImage} alt="people teaching"
                 className="w-3/5"/>
             </section>
