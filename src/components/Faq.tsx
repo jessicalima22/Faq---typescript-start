@@ -17,8 +17,8 @@ export default function Faq () {
 }
 
     return(
-        <main className=" bg-primary pt-5 grid md:grid-cols-2 md:gap-2 md:grid-rows-4 md:max-h-[47%] grid-cols-1 grid-rows-[1fr_23%_minmax(20%,900px)]">
-            <section className="ps-28 md:row-span-4 row-span-1">
+        <main className=" bg-primary pt-5 grid md:grid-cols-2 md:gap-5 md:grid-rows-4 md:max-h-[47%] grid-cols-1 grid-rows-[1fr_37%_minmax(10%,24rem)] justify-items-center">
+            <section className="md:ps-28 md:row-span-4 row-span-1">
                 <Questions 
                     question='What is Tailwind and how does it work?' 
                     answer='Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...'
@@ -48,7 +48,7 @@ export default function Faq () {
                     open = {active===3}
                     />
             </section>
-            <section className="ps-28 md:row-span-2 row-span-1">
+            <section className="md:ps-28 md:row-span-2">
                 <Questions 
                     question='How do I become a data Scientist?' 
                     answer='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex.'
@@ -71,7 +71,7 @@ export default function Faq () {
                     open = {active===6}
                     />
             </section>            
-            <section className="grid justify-items-center ">
+            <section className="grid justify-items-center">
                 <Image src={peopleImage} alt="people teaching"
                 className="md:w-4/5 w-2/3"/>
             </section>
