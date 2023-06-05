@@ -25,8 +25,8 @@ module.exports = {
         '100': '28rem',
         'textbox': '31rem'
       },
-      maxHeight: {
-        '100': '28rem'
+      minHeight: {
+        '25%': '25%'
       },
       minWidth: {
         '98': '24rem'
